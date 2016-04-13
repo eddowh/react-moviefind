@@ -2,17 +2,23 @@
  * Main application
  */
 
+
 var React = require('react');
 
+// Flux
 var AppActions = require('../actions/AppActions');
 var AppStore = require('../stores/AppStore')
+
+// Components
+var SearchForm = require('./SearchForm.jsx');
+
 
 var App = React.createClass({
 
     render: function() {
         return (
             <div>
-                Hello World!
+                <SearchForm />
             </div>
         );
     }
