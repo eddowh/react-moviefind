@@ -18,6 +18,9 @@ var SearchForm = React.createClass({
 
         // console.log(movie);
         this.refs.title.value = '';
+
+        // search the movie
+        AppActions.searchMovies(movie);
     },
 
     render: function() {
